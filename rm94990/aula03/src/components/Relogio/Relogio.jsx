@@ -3,10 +3,12 @@ import React, {useState} from "react";
 
 export default function Relogio(){
 
-    const [relogio, setRelogio] = useState(new Date().toLocaleDateString())
+    let hora = new Date().toLocaleTimeString()
+    const [relogio, setRelogio] = useState(hora)
 
     setTimeout(() => {
         setRelogio(new Date().toLocaleTimeString())
+        setRelogio(hora)
     }, 1000)
 
     return(
