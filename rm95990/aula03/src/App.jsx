@@ -2,6 +2,7 @@ import React from "react"
 import ApiExterna from "./components/apiExterna/ApiExterna"
 import Calculo from "./components/calculo/Calculo"
 import Componente1 from "./components/componente1/Componente1"
+import Relogio from "./components/relogio/relogio"
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
                 <Componente1 /> 
                 <h2>Ex: de renderização condicional!</h2>
                 <Calculo />*/}
+                <Relogio/>            
                 <ApiExterna />
             </div>
         </div>
