@@ -14,8 +14,10 @@ export default function App() {
                 <h2>Ex: de renderização condicional!</h2>
                 <Calculo />*/}
                 <Relogio/>
+                <GitUsers/>
                 <ApiExterna />
             </div>
         </div>
     )
 }
+
