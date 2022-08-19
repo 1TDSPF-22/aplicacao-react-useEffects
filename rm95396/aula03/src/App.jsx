@@ -3,6 +3,7 @@ import ApiExterna from "./components/apiExterna/ApiExterna"
 import Calculo from "./components/calculo/Calculo"
 import Componente1 from "./components/componente1/Componente1"
 import Relogio from "./components/relogio/Relogio"
+import GitUsers from "./components/gitusers/GitUsers"
 
 
 export default function App() {
@@ -14,9 +15,9 @@ export default function App() {
                 <Componente1 /> 
                 <h2>Ex: de renderização condicional!</h2>
                 <Calculo />*/}
-                 Importanndo o componente
-                <Relogio/> 
-                <ApiExterna />
+                <Relogio/> {/*Importanndo o componente*/}
+                {/* <ApiExterna /> */}
+                <GitUsers/>
             </div>
         </div>
     )
