@@ -32,7 +32,9 @@ export default function GitUsers() {
 
         <ul>
             {listaUsuarios.map((usuario)=>
-                <li key={usuario.id}>{usuario.login}</li>
+                <li key={usuario.id}>
+               {usuario.login}
+                                    </li>
             )}
         </ul>
 
