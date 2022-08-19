@@ -1,5 +1,5 @@
-import React from "react"
-import useState  from "react"
+import React from 'react'
+import useState  from 'react'
 
 
 export default function Relogio(){
@@ -9,6 +9,8 @@ export default function Relogio(){
     const [relogio, setRelogio] = useState(hora)
 
     setTimeout(() => {
+        
+        hora = new Date().toLocaleTimeString()
         setRelogio(hora)
     }, 1000);
 

@@ -1,15 +1,15 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect} from 'react';
 
 export default function ApiExterna() {
     
     const [repositorios, setRepositorios] = useState([])
 
     useEffect(async()=>{
-        const resp = await fetch("https://api.github.com/users/alecarlosjesus/repos")
+        const resp = await fetch("https://api.github.com/users/btwbeatriz/repos")
         const data = await resp.json()
 
         setRepositorios(data)
-
+        
     }, [])
 
     useEffect(() => {
