@@ -3,11 +3,11 @@ import { useState } from "react"
 
 export default function Relogio(){
     
-    let hora = new Date().toLocaleTimeString()
-    const [relogio, setRelogio] = useState(hora)
+    
+    const [relogio, setRelogio] = useState(new Date().toLocaleTimeString())
     
     setTimeout(() => {
-        setRelogio(hora)
+        setRelogio(new Date().toLocaleTimeString())
     }, 1000);
 
     return(
