@@ -2,6 +2,7 @@ import React from "react"
 import ApiExterna from "./components/apiExterna/ApiExterna"
 import Calculo from "./components/calculo/Calculo"
 import Componente1 from "./components/componente1/Componente1"
+import GitUsers from "./components/gitUsers/GitUsers"
 import Relogio from "./components/relogio/Relogio"
 
 export default function App() {
@@ -14,7 +15,8 @@ export default function App() {
                 <h2>Ex: de renderização condicional!</h2>
                 <Calculo />*/}
                 <Relogio />
-                <ApiExterna />
+                {/*<ApiExterna />*/}
+                <GitUsers/>
             </div>
         </div>
     )
