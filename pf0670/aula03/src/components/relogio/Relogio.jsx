@@ -7,6 +7,7 @@ export default function Relogio(){
     const [relogio, setRelogio] = useState(hora)
 
     setTimeout(() => {
+        hora = new Date().toLocaleTimeString()
        setRelogio(hora)         
     }, 1000);
 
