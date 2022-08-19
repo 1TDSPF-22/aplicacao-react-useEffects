@@ -5,7 +5,7 @@ export default function ApiExterna() {
     const [repositorios, setRepositorios] = useState([])
 
     useEffect(async()=>{
-        const resp = await fetch("https://api.github.com/users/btwbeatriz/repos")
+        const resp = await fetch("https://api.github.com/users/alecarlosjesus/repos")
         const data = await resp.json()
 
         setRepositorios(data)
