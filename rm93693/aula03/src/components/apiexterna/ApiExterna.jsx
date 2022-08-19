@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default () => {
+export default function ApiExterna() {
   const [repositorios, setRepositorios] = useState([]);
 
   useEffect(() => {

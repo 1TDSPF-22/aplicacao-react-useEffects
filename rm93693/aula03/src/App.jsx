@@ -2,6 +2,7 @@ import React from "react";
 import ApiExterna from "./components/apiexterna/ApiExterna";
 import Calculo from "./components/Calculo";
 import Componente1 from "./components/componente1/Componente1";
+import GitUser from "./components/GitUsers/GitUser";
 import Relogio from "./components/relogio/Relogio";
 
 export default function App() {
@@ -13,7 +14,8 @@ export default function App() {
         <Componente1 />
         <Calculo />
         <Relogio/>
-        <ApiExterna />
+        {/* <ApiExterna /> */}
+        <GitUser/>
       </div>
     </>
   );
