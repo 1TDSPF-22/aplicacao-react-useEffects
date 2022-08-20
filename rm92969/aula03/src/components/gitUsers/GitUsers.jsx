@@ -35,8 +35,10 @@ export default function GitUsers() {
             <button onClick={()=> carregaLista()}>Carregar</button>
             
             <ul>
-                {listaUsuarios.map((usuario)=>
+                {listaUsuarios.map((usuario, id)=>
                     <li key={usuario.id}>{usuario.login}</li>
+                    <li key={usuario.id}>{usuario.avatar_url}</li>
+                    <li key={usuario.id}>{usuario.url}</li>
                 )}
             </ul>
         </div>
