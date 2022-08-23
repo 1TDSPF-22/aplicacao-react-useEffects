@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 export default function ApiExterna() {
 	const [repositorios, setRepositorios] = useState([]);
 
-	useEffect(async () => {
+	useEffect = async () => {
 		const resp = await fetch("https://api.github.com/users/NapoleonBorn2Party/repos");
 		const data = await resp.json();
 
 		setRepositorios(data);
-	}, []);
+	};
 
 	useEffect(() => {
 		console.log("RENDERIZOU!");

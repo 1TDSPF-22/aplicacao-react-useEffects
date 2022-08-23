@@ -1,0 +1,68 @@
+.username {
+	text-align: center;
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.35);
+	border-radius: 10px;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	align-items: center;
+	gap: 50px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	max-width: 200px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.button {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+a.button:before,
+a.button:after {
+	opacity: 0;
+	transition: all 0.3s ease;
+	font-size: 13px;
+}
+
+a.button:before {
+	content: "[";
+}
+
+a.button:after {
+	content: "]";
+}
+
+a.button:hover:before {
+	margin-right: 10px;
+	content: "[";
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+	opacity: 1;
+}
+
+a.button:hover:after {
+	margin-left: 10px;
+	content: "]";
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+	opacity: 1;
+}
