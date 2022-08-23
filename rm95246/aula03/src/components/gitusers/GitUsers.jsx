@@ -31,9 +31,14 @@ export default function GitUsers(){
 
         <button onClick={()=> carregaLista()}>CARREGAR</button>
 
-        <ul>
+        <ul style={{listStyle: 'none'}}>
             {listaUsuarios.map((usuario)=>
-            <li key={usuario.id}>{usuario.login}</li>
+                <li key={usuario.id}>
+                <figure> 
+                    <img src={usuario.avatar_url} alt={usuario.login} title={`Usuário do GitHub :$ {usuario.login}`} style={{width: '200px'}} />
+                    <figcaption><a href={usuario.html_url}>{usuario.login}</a></figcaption>
+                </figure>
+                </li>
             )}
         </ul>
 
